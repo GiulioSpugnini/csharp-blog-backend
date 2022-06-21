@@ -12,9 +12,7 @@ namespace csharp_blog_backend.Models
         [Required(ErrorMessage = "Il campo è obbligatorio")]
         [StringLength(75, ErrorMessage = "Il titolo non può essere oltre i 75 caratteri")]
 
-        
         public string Title { get; set; }
-        public string? Category { get; set; }
 
         [Required(ErrorMessage = "Il campo è obbligatorio")]
         [Column(TypeName = "text")]
